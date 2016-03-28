@@ -1,0 +1,21 @@
+h1 {
+    color: #369;
+    font-size: 250%;
+}
+
+h2, h3 {
+    color: #444;
+    font-weight: lighter;
+}
+
+input[text], button {
+    color: #888;
+}
+
+div {
+    text-align: center;
+}
+
+ul {
+    text-align: left;
+}

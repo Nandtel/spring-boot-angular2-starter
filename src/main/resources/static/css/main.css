@@ -1,0 +1,9 @@
+html {
+     font-family: Cambria, Georgia, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
