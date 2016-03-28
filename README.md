@@ -17,7 +17,7 @@ But if not - use this command for installing node and npm localy in project dire
 gradlew npm_install
 ```
 
-At first build will be downloading typing, compiling typescript to javascript, concatenating lib.js from all javascript sources, prefixing css and replacing html files. More clearly this tasks you can see in gulpfile.js.
+At first build will be downloading typing, compiling typescript to javascript, concatenating lib.js from all javascript sources, prefixing css and replacing html files. More clearly this tasks you can see in [gulpfile.js](gulpfile.js).
 For this you can run:
 
 ```
