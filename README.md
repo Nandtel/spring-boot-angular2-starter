@@ -13,7 +13,7 @@ At first, install npm package for the project. I suppose, you have installed nod
 npm install
 ```
 
-But if not - use this command for installing node and npm localy in project directory:
+But if not – use this command for installing node and npm localy in project directory:
 
 ```
 gradlew npm_install
@@ -36,11 +36,11 @@ Now you can see the result at [localhost](http://localhost:8080/).
 
 ## Technologies
 
-Spring Boot v.1.3.3
-Gradle v.2.9
-AngularJS v.2.0.0-beta.12
-Gulp v.3.9.1
-[...](package.json)
+- Spring Boot v.1.3.3
+- Gradle v.2.9
+- AngularJS v.2.0.0-beta.12
+- Gulp v.3.9.1
+- [...](package.json)
 
 ## License
 The MIT License (MIT)
