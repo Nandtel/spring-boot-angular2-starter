@@ -40,7 +40,7 @@ Now you can see the result at [localhost](http://localhost:8080/).
 - Gradle v.2.9
 - AngularJS v.2.0.0-beta.12
 - Gulp v.3.9.1
-- [rest](package.json)
+- [package.json](package.json)
 
 ## License
 The MIT License (MIT)
