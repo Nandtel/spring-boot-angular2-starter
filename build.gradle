@@ -44,7 +44,6 @@ eclipse {
 	}
 }
 
-/*
 // If you haven't installed node globally
 node {
 	version = '5.9.1'
@@ -52,14 +51,6 @@ node {
 	download = true
 	workDir = file("${project.projectDir}/")
 	nodeModulesDir = file("${project.projectDir}/")
-}
-*/
-
-// If you have installed node globally
-node {
-	npmVersion = '3.8.2'
-	download = false
-	nodeModulesDir = file("${project.projectDir}")
 }
 
 gulp {
