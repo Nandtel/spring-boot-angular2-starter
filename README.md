@@ -31,3 +31,6 @@ gradlew bootRun
 ```
 
 Now you can see the result at [localhost](http://localhost:8080/).
+
+## license
+[MIT](LICENSE)
