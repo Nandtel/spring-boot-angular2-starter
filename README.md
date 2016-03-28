@@ -3,7 +3,7 @@ The simple starter application on Spring Boot with AngularJS 2. This is my perso
 
 My goal is basic, simple and configurated project for convient start with Spring Boor and AngularJS 2.
 
-# How to run
+## How to run
 
 At first, install npm package for the project. I suppose, you have installed node globally, then just enter follow: 
 
@@ -32,5 +32,5 @@ gradlew bootRun
 
 Now you can see the result at [localhost](http://localhost:8080/).
 
-# License
+## License
 The MIT License (MIT)
