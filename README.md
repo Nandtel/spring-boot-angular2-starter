@@ -48,7 +48,7 @@ Or you can each time start handling by yourself, using default gulp command:
 gulp
 ```
 
-In this way, all changes in [webapp directory](/src/main/webapp/) will be syncronized with [static directory](/src/main/resources/static/) static directory of Spring Boot.
+In this way, all changes in [webapp directory](/src/main/webapp/) will be syncronized with [static directory](/src/main/resources/static/) of Spring Boot.
 
 ## Technologies
 
