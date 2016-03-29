@@ -1,5 +1,5 @@
 # Spring Boot Angular2 Starter Application
-The simple starter application on Spring Boot with AngularJS 2. This is my personal base application for Spring Boot + AngularJS 2 projects. I prefer to use gradle as a primary build system and gulp as a build system for front-end. All the interaction with compiling typescript, prefixing css and installing typings are handling by gulp. All the taks for installing node, npm and gulp were implemented in the gradle for more convient introduction.
+The simple starter application on Spring Boot with AngularJS 2. This is my personal base application for Spring Boot + AngularJS 2 projects. I prefer to use gradle as a primary build system and gulp as a build system for front-end. All the interaction with compiling typescript, prefixing css and installing typings are handled by gulp. All the taks for installing node, npm and gulp were implemented in the gradle for more convient introduction.
 
 ## Motivation
 
@@ -33,6 +33,22 @@ gradlew bootRun
 ```
 
 Now you can see the result at [localhost](http://localhost:8080/).
+
+## Development mode
+
+For front-end good practice is using gulp watch: when on change typescript, html or css files in webapp directory starts gulp handling task. For this just run:
+
+```
+gulp watch
+```
+
+Or you can each time start handling by yourself, using default gulp command:
+
+```
+gulp
+```
+
+In this way, all changes in [webapp directory](/src/main/webapp/) will be syncronized with [static directory](/src/main/resources/static/) static directory of Spring Boot.
 
 ## Technologies
 
