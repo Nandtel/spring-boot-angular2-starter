@@ -32,10 +32,10 @@ repositories {
 
 
 dependencies {
+	compile("org.springframework.boot:spring-boot-devtools")
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 }
-
 
 eclipse {
 	classpath {
@@ -61,4 +61,8 @@ gulp {
 
 task wrapper(type: Wrapper) {
 	gradleVersion = '2.9'
+}
+
+bootRun {
+	addResources = true
 }
