@@ -50,6 +50,16 @@ gulp
 
 In this way, all changes in [webapp directory](/src/main/webapp/) will be syncronized with [static directory](/src/main/resources/static/) of Spring Boot.
 
+Then install [livereload extension](http://livereload.com/extensions/) for your browser and start the app with command:
+
+```
+gradlew bootRun
+```
+
+Click to the extension and make sure LiveReload is running on your page.
+
+Now you can work in reactive style with LiveReload for static content and fast reloading for application.
+
 ## Technologies
 
 - Spring Boot v.1.3.3
