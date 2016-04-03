@@ -70,7 +70,3 @@ bower_components/
 
 ### Typings
 typings/
-
-### Static generated resources
-app/
-lib/
