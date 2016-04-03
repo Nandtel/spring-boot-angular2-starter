@@ -66,3 +66,7 @@ task wrapper(type: Wrapper) {
 bootRun {
 	addResources = true
 }
+
+task stage {
+	dependsOn build
+}
