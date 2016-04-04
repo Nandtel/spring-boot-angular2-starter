@@ -3,7 +3,6 @@ const del = require('del');
 const concat = require('gulp-concat');
 const ts = require('gulp-typescript');
 const newer = require('gulp-newer');
-const gulpTypings = require("gulp-typings");
 const autoprefixer = require('gulp-autoprefixer');
 
 const staticAppDir = 'src/main/resources/static/app/';
@@ -56,20 +55,7 @@ gulp.task('css-replace', function() {
         .pipe(gulp.dest(staticAppDir))
 });
 
-gulp.task('install-typings', function() {
-    gulp.src("typings.json")
-        .pipe(gulpTypings());
-
-    /**
-     * Gulp-typings need more time for successfully installation of typings
-     * Custom synchronization methods don't work in this case, gulp-sync too
-     * If you see error like this: "error TS2304: Cannot find name", just set more time in timeout
-     */
-    setTimeout(function() {gulp.start('typescript-compile')}, 1000);
-    
-});
-
-gulp.task('build', ['install-typings', 'library-concat', 'html-replace', 'css-replace']);
+gulp.task('build', ['typescript-compile', 'library-concat', 'html-replace', 'css-replace']);
 gulp.task('default', ['typescript-compile', 'html-replace', 'css-replace']);
 
 gulp.task('watch', function() {
