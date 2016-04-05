@@ -14,5 +14,7 @@ import {ServerComponent} from "../server.component/server.component";
 @RouteConfig([
     {path: '/',          redirectTo:['Dashboard']},
     {path: '/dashboard', name: 'Dashboard', component: DashboardComponent, useAsDefault: true},
+    {path: '/404',       name: '404',       component: NotFoundComponent},
+    {path: '/**',        redirectTo:['404']}
 ])
 export class AppComponent {}
