@@ -24,8 +24,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 NotFoundComponent = __decorate([
                     core_1.Component({
                         selector: 'not-found',
-                        templateUrl: '404.component/404.component.html',
-                        styleUrls: ['404.component/404.component.css'],
+                        templateUrl: 'app/404.component/404.component.html',
+                        styleUrls: ['app/404.component/404.component.css'],
                     }), 
                     __metadata('design:paramtypes', [])
                 ], NotFoundComponent);

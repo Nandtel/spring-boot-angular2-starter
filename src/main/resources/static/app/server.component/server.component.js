@@ -39,8 +39,8 @@ System.register(['angular2/core', 'angular2/common', 'angular2/http', "../servic
                 ServerComponent = __decorate([
                     core_1.Component({
                         selector: 'server',
-                        templateUrl: 'server.component/server.component.html',
-                        styleUrls: ['server.component/server.component.css'],
+                        templateUrl: 'app/server.component/server.component.html',
+                        styleUrls: ['app/server.component/server.component.css'],
                         providers: [server_service_1.ServerService, http_1.HTTP_PROVIDERS],
                         directives: [common_1.NgIf]
                     }), 

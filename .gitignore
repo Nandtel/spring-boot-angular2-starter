@@ -69,4 +69,7 @@ bower_components/
 *.log
 
 ### Typings
-typings/
+typings
+
+### Static
+static

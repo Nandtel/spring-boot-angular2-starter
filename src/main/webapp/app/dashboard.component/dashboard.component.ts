@@ -2,8 +2,8 @@ import {Component} from 'angular2/core';
 
 @Component({
     selector: 'dashboard',
-    templateUrl: 'dashboard.component/dashboard.component.html',
-    styleUrls: ['dashboard.component/dashboard.component.css'],
+    templateUrl: 'app/dashboard.component/dashboard.component.html',
+    styleUrls: ['app/dashboard.component/dashboard.component.css'],
 })
 export class DashboardComponent {
     name: string = 'World';

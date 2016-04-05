@@ -5,8 +5,7 @@ const ts = require('gulp-typescript');
 const newer = require('gulp-newer');
 const autoprefixer = require('gulp-autoprefixer');
 
-const staticAppDir = 'src/main/resources/static/app/';
-const staticLibDir = 'src/main/resources/static/lib/';
+const staticDir = 'src/main/resources/static/';
 const webAppDir = 'src/main/webapp/';
 
 const lib = [
@@ -23,9 +22,9 @@ const lib = [
 
 gulp.task('library-concat', function() {
     return gulp.src(lib)
-        .pipe(newer(staticLibDir + 'lib.min.js'))
-        .pipe(concat('lib.min.js'))
-        .pipe(gulp.dest(staticLibDir))
+        .pipe(newer(staticDir + 'source.min.js'))
+        .pipe(concat('source.min.js'))
+        .pipe(gulp.dest(staticDir))
 });
 
 gulp.task('typescript-compile', function() {
@@ -35,25 +34,25 @@ gulp.task('typescript-compile', function() {
             'typings/browser.d.ts',
             webAppDir + '**/*.ts'
         ])
-        .pipe(newer({dest: staticAppDir, ext: '.js'}))
+        .pipe(newer({dest: staticDir, ext: '.js'}))
         .pipe(ts(tsProject))
-        .pipe(gulp.dest(staticAppDir))
+        .pipe(gulp.dest(staticDir))
 });
 
 gulp.task('html-replace', function() {
     return gulp.src(webAppDir + '**/*.html')
-        .pipe(newer(staticAppDir))
-        .pipe(gulp.dest(staticAppDir))
+        .pipe(newer(staticDir))
+        .pipe(gulp.dest(staticDir))
 });
 
 gulp.task('css-replace', function() {
     return gulp.src(webAppDir + '**/*.css')
-        .pipe(newer(staticAppDir))
+        .pipe(newer(staticDir))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest(staticAppDir))
+        .pipe(gulp.dest(staticDir))
 });
 
 gulp.task('build', ['typescript-compile', 'library-concat', 'html-replace', 'css-replace']);

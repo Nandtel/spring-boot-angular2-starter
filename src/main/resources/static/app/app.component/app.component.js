@@ -36,8 +36,8 @@ System.register(['angular2/core', 'angular2/router', "../dashboard.component/das
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'app',
-                        templateUrl: 'app.component/app.component.html',
-                        styleUrls: ['app.component/app.component.css'],
+                        templateUrl: 'app/app.component/app.component.html',
+                        styleUrls: ['app/app.component/app.component.css'],
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [router_1.ROUTER_PROVIDERS]
                     }),

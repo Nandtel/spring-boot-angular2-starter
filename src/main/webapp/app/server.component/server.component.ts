@@ -5,8 +5,8 @@ import {ServerService} from "../service/server.service";
 
 @Component({
     selector: 'server',
-    templateUrl: 'server.component/server.component.html',
-    styleUrls: ['server.component/server.component.css'],
+    templateUrl: 'app/server.component/server.component.html',
+    styleUrls: ['app/server.component/server.component.css'],
     providers: [ServerService, HTTP_PROVIDERS],
     directives: [NgIf]
 })

@@ -36,8 +36,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 DashboardComponent = __decorate([
                     core_1.Component({
                         selector: 'dashboard',
-                        templateUrl: 'dashboard.component/dashboard.component.html',
-                        styleUrls: ['dashboard.component/dashboard.component.css'],
+                        templateUrl: 'app/dashboard.component/dashboard.component.html',
+                        styleUrls: ['app/dashboard.component/dashboard.component.css'],
                     }), 
                     __metadata('design:paramtypes', [])
                 ], DashboardComponent);

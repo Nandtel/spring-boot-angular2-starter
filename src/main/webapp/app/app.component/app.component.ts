@@ -6,8 +6,8 @@ import {ServerComponent} from "../server.component/server.component";
 
 @Component({
     selector: 'app',
-    templateUrl: 'app.component/app.component.html',
-    styleUrls: ['app.component/app.component.css'],
+    templateUrl: 'app/app.component/app.component.html',
+    styleUrls: ['app/app.component/app.component.css'],
     directives: [ROUTER_DIRECTIVES],
     providers: [ROUTER_PROVIDERS]
 })
