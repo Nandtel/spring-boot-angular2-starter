@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', "../dashboard.component/dashboard.component", "../404.component/404.component"], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', "../dashboard.component/dashboard.component", "../404.component/404.component", "../server.component/server.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', "../dashboard.component/das
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, dashboard_component_1, _404_component_1;
+    var core_1, router_1, dashboard_component_1, _404_component_1, server_component_1;
     var AppComponent;
     return {
         setters:[
@@ -25,6 +25,9 @@ System.register(['angular2/core', 'angular2/router', "../dashboard.component/das
             },
             function (_404_component_1_1) {
                 _404_component_1 = _404_component_1_1;
+            },
+            function (server_component_1_1) {
+                server_component_1 = server_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -41,6 +44,7 @@ System.register(['angular2/core', 'angular2/router', "../dashboard.component/das
                     router_1.RouteConfig([
                         { path: '/', redirectTo: ['Dashboard'] },
                         { path: '/dashboard', name: 'Dashboard', component: dashboard_component_1.DashboardComponent, useAsDefault: true },
+                        { path: '/server', name: 'Server', component: server_component_1.ServerComponent },
                         { path: '/404', name: '404', component: _404_component_1.NotFoundComponent },
                         { path: '/**', redirectTo: ['404'] }
                     ]), 
