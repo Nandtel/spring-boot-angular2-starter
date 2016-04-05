@@ -17,7 +17,8 @@ const lib = [
     'node_modules/systemjs/dist/system.src.js',
     'node_modules/rxjs/bundles/Rx.min.js',
     'node_modules/angular2/bundles/angular2.min.js',
-    'node_modules/angular2/bundles/http.dev.js'
+    'node_modules/angular2/bundles/http.dev.js',
+    'node_modules/angular2/bundles/router.dev.js'
 ];
 
 gulp.task('library-concat', function() {

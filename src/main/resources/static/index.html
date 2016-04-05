@@ -1,25 +1,17 @@
 <html>
 	<head>
+		<base href="/">
 		<title>Application</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="lib/lib.min.js"></script>
+		<script>
+			System.config({packages: {app: {format: 'register', defaultExtension: 'js'}}});
+			System.import('app/main')
+					.then(null, console.error.bind(console));
+		</script>
 	</head>
 	<body>
 		<app>Loading...</app>
-
-		<script src="lib/lib.min.js"></script>
-
-		<script>
-		      System.config({
-		        packages: {
-		          'app': {
-		            format: 'register',
-		            defaultExtension: 'js'
-		          }
-		        }
-		      });
-		      System.import('app/main')
-		      	.then(null, console.error.bind(console));
-		</script>
 	</body>
 </html>

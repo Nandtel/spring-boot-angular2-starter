@@ -1,21 +1,15 @@
-h1 {
-    color: #369;
-    font-size: 250%;
-}
-
-h2, h3 {
-    color: #444;
-    font-weight: lighter;
-}
-
-input[text], button {
-    color: #888;
-}
-
-div {
+nav {
     text-align: center;
 }
 
-ul {
-    text-align: left;
+a:first-child {
+    margin-right: 1rem;
+}
+
+a:last-child {
+    margin-left: 1rem;
+}
+
+a {
+    margin: 0 1rem;
 }

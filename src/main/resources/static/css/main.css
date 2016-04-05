@@ -7,3 +7,7 @@ body {
     justify-content: center;
     margin: 2em;
 }
+
+app {
+    width: 30rem;
+}
