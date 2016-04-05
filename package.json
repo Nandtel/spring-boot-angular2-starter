@@ -1,7 +1,7 @@
 {
-  "name": "simple-spring-boot-angular2-example",
+  "name": "spring-boot-angular2-starter",
   "description": "Just a simple Spring Boot and Angular2 app",
-  "version": "0.0.1-SNAPSHOT",
+  "version": "0.1-SNAPSHOT",
   "license": "MIT",
   "scripts": {
     "postinstall": "typings install && gulp build"
