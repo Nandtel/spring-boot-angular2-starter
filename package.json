@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "postinstall": "typings install && gulp build"
+    "postinstall": "./node_modules/.bin/typings install && gulp build"
   },
   "dependencies": {
     "angular2": "2.0.0-beta.13",
