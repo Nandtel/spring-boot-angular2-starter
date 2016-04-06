@@ -9,19 +9,19 @@ const sourcemaps = require('gulp-sourcemaps');
 const htmlmin = require('gulp-htmlmin');
 const uglify = require('gulp-uglify');
 
-const staticDir = './src/main/resources/static/';
-const webAppDir = './src/main/webapp/';
+const staticDir = 'src/main/resources/static/';
+const webAppDir = 'src/main/webapp/';
 
 const lib = [
-    './node_modules/es6-shim/es6-shim.min.js',
-    './node_modules/systemjs/dist/system-polyfills.js',
-    './node_modules/angular2/es6/dev/src/testing/shims_for_IE.js',
-    './node_modules/angular2/bundles/angular2-polyfills.min.js',
-    './node_modules/systemjs/dist/system.src.js',
-    './node_modules/rxjs/bundles/Rx.min.js',
-    './node_modules/angular2/bundles/angular2.min.js',
-    './node_modules/angular2/bundles/http.dev.js',
-    './node_modules/angular2/bundles/router.dev.js'
+    'node_modules/es6-shim/es6-shim.min.js',
+    'node_modules/systemjs/dist/system-polyfills.js',
+    'node_modules/angular2/es6/dev/src/testing/shims_for_IE.js',
+    'node_modules/angular2/bundles/angular2-polyfills.min.js',
+    'node_modules/systemjs/dist/system.src.js',
+    'node_modules/rxjs/bundles/Rx.min.js',
+    'node_modules/angular2/bundles/angular2.min.js',
+    'node_modules/angular2/bundles/http.dev.js',
+    'node_modules/angular2/bundles/router.dev.js'
 ];
 
 gulp.task('library-concat', function() {
