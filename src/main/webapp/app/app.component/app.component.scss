@@ -1,0 +1,15 @@
+nav {
+    text-align: center;
+}
+
+a {
+    margin: 0 1rem;
+
+    :first-child {
+        margin-right: 1rem;
+    }
+
+    :last-child {
+        margin-left: 1rem;
+    }
+}

@@ -4,6 +4,8 @@ const concat = require('gulp-concat');
 const ts = require('gulp-typescript');
 const newer = require('gulp-newer');
 const autoprefixer = require('gulp-autoprefixer');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
 
 const staticDir = './src/main/resources/static/';
 const webAppDir = './src/main/webapp/';
@@ -34,8 +36,10 @@ gulp.task('typescript-compile', function() {
             'typings/browser.d.ts',
             webAppDir + '**/*.ts'
         ])
+        .pipe(sourcemaps.init())
         .pipe(newer({dest: staticDir, ext: '.js'}))
         .pipe(ts(tsProject))
+        .pipe(sourcemaps.write('/'))
         .pipe(gulp.dest(staticDir))
 });
 
@@ -46,12 +50,15 @@ gulp.task('html-replace', function() {
 });
 
 gulp.task('css-replace', function() {
-    return gulp.src(webAppDir + '**/*.css')
-        .pipe(newer(staticDir))
+    return gulp.src(webAppDir + '**/*.scss')
+        .pipe(newer({dest: staticDir, ext: '.css'}))
+        .pipe(sourcemaps.init())
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
+        .pipe(sourcemaps.write('/'))
         .pipe(gulp.dest(staticDir))
 });
 
@@ -61,5 +68,5 @@ gulp.task('default', ['typescript-compile', 'html-replace', 'css-replace']);
 gulp.task('watch', function() {
     gulp.watch(webAppDir + '**/*.ts', ['typescript-compile']);
     gulp.watch(webAppDir + '**/*.html', ['html-replace']);
-    gulp.watch(webAppDir + '**/*.css', ['css-replace']);
+    gulp.watch(webAppDir + '**/*.scss', ['css-replace']);
 });
