@@ -6,6 +6,8 @@ const newer = require('gulp-newer');
 const autoprefixer = require('gulp-autoprefixer');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
+const htmlmin = require('gulp-htmlmin');
+const uglify = require('gulp-uglify');
 
 const staticDir = './src/main/resources/static/';
 const webAppDir = './src/main/webapp/';
@@ -36,9 +38,10 @@ gulp.task('typescript-compile', function() {
             'typings/browser.d.ts',
             webAppDir + '**/*.ts'
         ])
-        .pipe(sourcemaps.init())
         .pipe(newer({dest: staticDir, ext: '.js'}))
+        .pipe(sourcemaps.init())
         .pipe(ts(tsProject))
+        .pipe(uglify())
         .pipe(sourcemaps.write('/'))
         .pipe(gulp.dest(staticDir))
 });
@@ -46,6 +49,9 @@ gulp.task('typescript-compile', function() {
 gulp.task('html-replace', function() {
     return gulp.src(webAppDir + '**/*.html')
         .pipe(newer(staticDir))
+        .pipe(sourcemaps.init())
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(sourcemaps.write('/'))
         .pipe(gulp.dest(staticDir))
 });
 
