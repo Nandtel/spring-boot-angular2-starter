@@ -22,11 +22,6 @@ gradlew npm_install
 ```
 
 At first build will be downloaded typing, compiled typescript to javascript, concatenated lib.js from all javascript sources, prefixed css and replaced html files. More clearly this tasks you can see in [gulpfile.js](gulpfile.js).
-For this you can run:
-
-```
-gradlew gulp_build
-```
 
 And run the server:
 
