@@ -7,6 +7,10 @@ The simple starter application on Spring Boot with AngularJS 2. This is my perso
 
 My goal is basic, simple and configurated project for convient start with Spring Boor and AngularJS 2.
 
+## Demo
+Сonvenient demo at Heroku: https://springbootangular2.herokuapp.com <br />
+Wait a few seconds until the Heroku initializes app. 
+
 ## Installation
 
 At first, install npm package for the project. I suppose, you have installed node globally, then just enter follow: 
