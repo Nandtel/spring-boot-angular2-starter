@@ -57,7 +57,7 @@ Then install [livereload extension](http://livereload.com/extensions/) for your 
 gradlew bootRun
 ```
 
-Click to the extension and make sure LiveReload is running on your page.
+Click to the extension and make sure that LiveReload is running on your page.
 
 Now you can work in reactive style with LiveReload for static content and fast reloading for application.
 
