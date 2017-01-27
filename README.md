@@ -19,13 +19,13 @@ At first, install npm package for the project. I suppose, you have installed nod
 npm install
 ```
 
-But if not – use this command for installing node and npm localy in project directory:
+But if not – use this command for installing node and npm locally in project directory:
 
 ```
 gradlew npm_install
 ```
 
-Necessary to install gulp and typings globaly, if you don't have them:
+Necessary to install gulp and typings globally, if you don't have them:
 
 ```
 npm install -g gulp
