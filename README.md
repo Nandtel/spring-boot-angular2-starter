@@ -22,7 +22,7 @@ npm install
 But if not – use this command for installing node and npm locally in project directory:
 
 ```
-gradlew npm_install
+./gradlew npm_install
 ```
 
 Necessary to install gulp and typings globally, if you don't have them:
@@ -37,7 +37,7 @@ At first build will be downloaded typing, compiled typescript to javascript, con
 And run the server:
 
 ```
-gradlew bootRun
+./gradlew bootRun
 ```
 
 Now you can see the result at [localhost](http://localhost:8080/).
@@ -61,7 +61,7 @@ In this way, all changes in [webapp directory](/src/main/webapp/) will be syncro
 Then install [livereload extension](http://livereload.com/extensions/) for your browser and start the app with command:
 
 ```
-gradlew bootRun
+./gradlew bootRun
 ```
 
 Click to the extension and make sure that LiveReload is running on your page.
