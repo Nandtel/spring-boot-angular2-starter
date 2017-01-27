@@ -25,6 +25,13 @@ But if not – use this command for installing node and npm localy in project di
 gradlew npm_install
 ```
 
+Necessary to install gulp and typings globaly, if you don't have them:
+
+```
+npm install -g gulp
+npm install -g typing
+```
+
 At first build will be downloaded typing, compiled typescript to javascript, concatenated lib.js from all javascript sources, prefixed css and replaced html files. More clearly this tasks you can see in [gulpfile.js](gulpfile.js).
 
 And run the server:
