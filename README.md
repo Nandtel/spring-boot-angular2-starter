@@ -70,7 +70,7 @@ Now you can work in reactive style with LiveReload for static content and fast r
 
 ## Technologies
 
-- Spring Boot v.1.4.4
+- Spring Boot v.1.5.1
 - Gradle v.2.9
 - AngularJS v.2.0.0-beta.12
 - Gulp v.3.9.1
