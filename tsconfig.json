@@ -10,8 +10,7 @@
     "noImplicitAny": false
   },
   "exclude": [
-    "node_modules",
-    "typings/main",
-    "typings/main.d.ts"
+    "gulpfile.ts",
+    "node_modules"
   ]
 }

@@ -4,6 +4,6 @@
     <input type="text" #box (keyup.enter)="onKyUpEnter(box.value)" (keyup)="onKeyUp(box.value)">
 
     <ul>
-        <li *ngFor="#name of names">{{name}}</li>
+        <li *ngFor="let name of names">{{name}}</li>
     </ul>
 </div>
