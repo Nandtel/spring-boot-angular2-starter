@@ -40,7 +40,7 @@ gulp.task('typescript-compile', () => {
         .pipe(gulp.dest(staticDir))
 });
 
-gulp.task('html-replace', function() {
+gulp.task('html-replace', () => {
     return gulp.src(webAppDir + '**/*.html')
         .pipe(newer(staticDir))
         .pipe(sourcemaps.init())
@@ -49,7 +49,7 @@ gulp.task('html-replace', function() {
         .pipe(gulp.dest(staticDir))
 });
 
-gulp.task('css-replace', function() {
+gulp.task('css-replace', () => {
     return gulp.src(webAppDir + '**/*.scss')
         .pipe(newer({dest: staticDir, ext: '.css'}))
         .pipe(sourcemaps.init())
